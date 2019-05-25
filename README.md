@@ -15,7 +15,8 @@ identify ship type only from the images taken by the survey boats. You have been
 model for this project.
 
 There are 5 classes of ships to be detected which are as follows: 
-![Category](images/category.jpg)
+
+![Category](images/category.png)
 
 #### Dataset Description
 
