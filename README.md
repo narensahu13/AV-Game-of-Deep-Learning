@@ -64,7 +64,7 @@ I have used [fastai](https://fast.ai) cnn learner datablock api. The final submi
 
 #### Score
 
-- private LB score - 0.9906 (Rank - 4/2083)
-- public LB Score - 0.9875 (Rank - 3/2083)
+- public LB score - 0.9906 (Rank - 4/2083)
+- private LB Score - 0.9875 (Rank - 3/2083)
 
 
