@@ -27,7 +27,6 @@ There are 6252 images in train and 2680 images in test data. The categories of s
 'Carrier' -> 3
 'Cruise' -> 4
 'Tankers' -> 5
-
 ```
 - There are three files provided to you, viz train.zip, test.csv and sample_submission.csv which have the following structure.
 
@@ -46,7 +45,7 @@ The Evaluation metric for this competition is weighted F1 Score.
 Public leaderboard is based on randomly selected 30% of the test images, while private leaderboard will be evaluated on remaining 
 70% of the test images.
 
-### Python 3.6 libraries
+#### Python 3.6 libraries
 ```
 fastai==1.0.50.post1
 torch==1.0.1.post2
@@ -54,12 +53,18 @@ torchvision==0.2.2
 pretrainedmodels
 ```
 
-### Models
+#### Approach
 
-TBD
+I have used [fastai](https://fast.ai) cnn learner datablock api. The final submission is a result of votings based on 
+22 odd submissions which were created from 22 different models based on different techniques such as: 
+ - different image size (224/499/584)
+ - different pre-trained architectures (resnet101/resnet152/densenet161)
+ - different augmentation techniques
+ - mixup models (see the code for details) 
 
-### Score
+#### Score
 
-TBD
+- private LB score - 0.9906 (Rank - 4/2083)
+- public LB Score - 0.9875 (Rank - 3/2083)
 
 
