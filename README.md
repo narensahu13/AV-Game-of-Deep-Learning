@@ -56,7 +56,7 @@ pretrainedmodels
 #### Approach
 
 I have used [fastai](https://fast.ai) cnn learner datablock api. The final submission is a result of votings based on 
-22 odd submissions which were created from 22 different models based on different techniques such as: 
+22 submissions which were created from 22 different models based on different techniques such as: 
  - different image size (224/499/584)
  - different pre-trained architectures (resnet101/resnet152/densenet161)
  - different augmentation techniques
