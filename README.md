@@ -47,8 +47,8 @@ Public leaderboard is based on randomly selected 30% of the test images, while p
 
 #### Python 3.6 libraries
 ```
-fastai==1.0.50.post1
-torch==1.0.1.post2
+fastai==1.0.51
+torch==1.0.1
 torchvision==0.2.2
 pretrainedmodels
 ```
@@ -57,14 +57,21 @@ pretrainedmodels
 
 I have used [fastai](https://fast.ai) cnn learner datablock api. The final submission is a result of votings based on 
 22 submissions which were created from 22 different models based on different techniques such as: 
- - different image size (224/499/584)
- - different pre-trained architectures (resnet101/resnet152/densenet161)
+ - different image size (299/484/599)
+ - different pre-trained architectures (resnet101/resnet152/densenet161/densenet169)
  - different augmentation techniques
  - mixup models (see the code for details) 
 
 #### Score
 
-- public LB score - 0.9906 (Rank - 4/2083)
-- private LB Score - 0.9875 (Rank - 3/2083)
+- public LB score - 0.9906 (Rank - 2/2083)
+- private LB Score - 0.9875 (Rank - 1/2083)
 
+#### Final Thoughts
 
+Although training 22 models seems very time consuming as well as computationally intensive, but for small dataset like this,
+it would be a great idea. I was able to acheive private LB score similar upto 4 decimal places as the score from 22 models using
+only 9 models (including 4 mixup models, image size was fixed at 499X499, 4 pre-trained architectures stated above were used and 
+lastly voting method was applied), however the public score was not that great (0.9855).
+This suggests that we still can achieve state of the art results by training fewer models and applying right ensemble method for 
+aggregating.
